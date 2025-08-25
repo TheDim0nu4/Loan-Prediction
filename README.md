@@ -64,6 +64,22 @@ Source: https://www.kaggle.com/datasets/mosaadhendam/loan-prediction-dataset
 
 ## Exploratory Data Analysis (EDA)
 
+As a first step, we need to explore and visualize our data. The goal of this step is to understand the data and identify what we need to do in the preprocessing step. <br>
+
+It includes: <br>
+
+- Explore a basic information about data (null values and statistical values). <br>
+- Check the class distribution. <br>
+- Create pairplots and corellations map to identify relaitonships bettwen features. <br>
+- Visualizate a boxplot and values distribution of each attribute. <br>
+- Explore how categorical column - Employment_Status influence to target attribute. <br>
+
+Graphs and detail information is available in eda.ipynb
+
+
+
+## Data Preprocessing
+
 
 
 
