@@ -8,30 +8,30 @@ It also has a simple console application where a client can enter their own data
 
 ## Project Structure
 
-Loan-Prediction/
+📂 Loan-Prediction/
 │
-├── data/
-│ ├── processed/
-│ │ ├── train.csv
-│ │ ├── test.csv
-│ ├── loan_prediction.csv
+├── 📂 data/
+│ ├── 📂 processed/
+│ │ ├── 📄 train.csv
+│ │ ├── 📄 test.csv
+│ ├── 📄 loan_prediction.csv
 │
-├── models/
-│ ├── gradient_boosting.joblib
-│ ├── logistic_regression.joblib
-│ ├── random_forest.joblib
-│ ├── svm.joblib
-│ ├── transformer.joblib
+├── 📂 models/
+│ ├── 📄 gradient_boosting.joblib
+│ ├── 📄 logistic_regression.joblib
+│ ├── 📄 random_forest.joblib
+│ ├── 📄 svm.joblib
+│ ├── 📄 transformer.joblib
 │
-├── notebooks/
-│ ├── eda.ipynb
-│ ├── evaluation.ipynb
-│ ├── modeling.ipynb
-│ ├── preprocessing.ipynb
+├── 📂 notebooks/
+│ ├── 📄 eda.ipynb
+│ ├── 📄 evaluation.ipynb
+│ ├── 📄 modeling.ipynb
+│ ├── 📄 preprocessing.ipynb
 │
-├── README.md
-├── app.py
-├── requirements.txt
+├── 📄 README.md
+├── 📄 app.py
+├── 📄 requirements.txt
 
 
 - data/ folder with raw and processed data.
