@@ -8,30 +8,30 @@ It also has a simple console application where a client can enter their own data
 
 ## Project Structure
 
-  Loan-Prediction/ 
-  │
-  ├── data/
-  │   ├── processed/
-  │   │    ├── train.csv
-  │   │    ├── test.csv
-  │   ├── loan_prediction.csv
-  │      
-  ├── models/
-  │   ├── gradient_boosting.joblib
-  │   ├── logistic_regression.joblib
-  │   ├── random_forest.joblib
-  │   ├── svm.joblib
-  │   ├── transformer.joblib
-  │
-  ├── notebooks/
-  │   ├── eda.ipynb
-  │   ├── evaluation.ipynb
-  │   ├── modeling.ipynb
-  │   ├── preprocessing.ipynb
-  │   
-  ├── README.md
-  ├── app.py
-  ├── requirements.txt
+  Loan-Prediction/ <br>
+  │ <br>
+  ├── data/ <br>
+  │   ├── processed/ <br>
+  │   │    ├── train.csv <br>
+  │   │    ├── test.csv <br>
+  │   ├── loan_prediction.csv <br>
+  │ <br>      
+  ├── models/ <br>
+  │   ├── gradient_boosting.joblib <br>
+  │   ├── logistic_regression.joblib <br>
+  │   ├── random_forest.joblib <br>
+  │   ├── svm.joblib <br>
+  │   ├── transformer.joblib <br>
+  │ <br>
+  ├── notebooks/ <br>
+  │   ├── eda.ipynb <br>
+  │   ├── evaluation.ipynb <br>
+  │   ├── modeling.ipynb <br>
+  │   ├── preprocessing.ipynb <br>
+  │ <br>  
+  ├── README.md <br>
+  ├── app.py <br>
+  ├── requirements.txt <br>
 
 - data/ folder with raw and processed data.
 - models/ folder with trained models and the transformer for data preprocessing.
