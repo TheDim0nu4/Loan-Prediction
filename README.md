@@ -8,6 +8,7 @@ It also has a simple console application where a client can enter their own data
 
 ## Project Structure
 
+```
 📂 Loan-Prediction/
 │
 ├── 📂 data/
@@ -32,7 +33,7 @@ It also has a simple console application where a client can enter their own data
 ├── 📄 README.md
 ├── 📄 app.py
 ├── 📄 requirements.txt
-
+```
 
 - data/ folder with raw and processed data.
 - models/ folder with trained models and the transformer for data preprocessing.
