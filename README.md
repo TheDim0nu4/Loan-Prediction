@@ -39,8 +39,8 @@ Loan-Prediction/
 - models/ folder with trained models and the transformer for data preprocessing.
 - notebooks/ folder with jupyter notebooks.
 - README.md provides project overview and instructions.
-- app.py consol application for using model
-- requirements.txt specifies Python dependencies
+- app.py consol application for using model.
+- requirements.txt specifies Python dependencies.
 
 
 
