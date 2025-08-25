@@ -136,14 +136,14 @@ During evaluation, we see that random forest and gradient boosting are almost pe
 
 1. Clone the repository: <br>
 
-  `git clone https://github.com/TheDim0nu4/Loan-Prediction.git` <br>
-  `cd Loan-Prediction` <br>
+   `git clone https://github.com/TheDim0nu4/Loan-Prediction.git` <br>
+   `cd Loan-Prediction` <br>
    
 2. Create a Python virtual environment (optional but recommended): <br>
 
    `python -m venv venv` <br>
 
-3. Install the required dependencies: <br><br>
+3. Install the required dependencies: <br>
 
    `pip install -r requirements.txt` <br>
 
