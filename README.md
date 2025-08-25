@@ -9,26 +9,26 @@ It also has a simple console application where a client can enter their own data
 ## Project Structure
 
   Loan-Prediction/ <br>
-  │ <br>
+  │ 
   ├── data/ <br>
   │   ├── processed/ <br>
   │   │    ├── train.csv <br>
   │   │    ├── test.csv <br>
   │   ├── loan_prediction.csv <br>
-  │ <br>      
+  │    
   ├── models/ <br>
   │   ├── gradient_boosting.joblib <br>
   │   ├── logistic_regression.joblib <br>
   │   ├── random_forest.joblib <br>
   │   ├── svm.joblib <br>
   │   ├── transformer.joblib <br>
-  │ <br>
+  │ 
   ├── notebooks/ <br>
   │   ├── eda.ipynb <br>
   │   ├── evaluation.ipynb <br>
   │   ├── modeling.ipynb <br>
   │   ├── preprocessing.ipynb <br>
-  │ <br>  
+  │  
   ├── README.md <br>
   ├── app.py <br>
   ├── requirements.txt <br>
