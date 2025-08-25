@@ -1,4 +1,4 @@
-# Loan Prediction
+# 💰 Loan Prediction
 
 This project focuses on analyzing data about loan approval and building a machine learning model to predict loan approval based on client information. 
 The project includes EDA, preprocessing the data, training machine learning models, then evaluating and comparing their performance. 
@@ -6,7 +6,7 @@ It also has a simple console application where a client can enter their own data
 
 
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 📂 Loan-Prediction/
@@ -44,7 +44,7 @@ It also has a simple console application where a client can enter their own data
 
 
 
-## Dataset 
+## 📊 Dataset 
 
 The dataset used is a publicly available dataset from Kaggle called 'Loan Prediction Dataset'. The dataset has 2000 rows and 7 columns. <br>
  
@@ -62,7 +62,7 @@ Source: https://www.kaggle.com/datasets/mosaadhendam/loan-prediction-dataset
 
 
 
-## Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis (EDA)
 
 As a first step, we need to explore and visualize our data. The goal of this step is to understand the data and see what we need to do in the preprocessing step. <br>
 
@@ -77,7 +77,7 @@ Graphs and detailed information are available in eda.ipynb
 
 
 
-## Data Preprocessing
+## 🛠️ Data Preprocessing
 
 In this step, we need to preprocess our data based on the EDA. <br>
 
@@ -93,7 +93,7 @@ Code and explanation are available in preprocessing.ipynb
 
 
 
-## Modeling 
+## 🤖 Modeling 
 
 In this step, we are going to train some machine learning models. We will train classic models for binary classification like logistic regression and support vector machines. 
 We will also train powerful models like random forest and gradient boosting, which work well with non-linear data. For each model, we will use grid search to find the best hyperparameters. <br>
@@ -110,7 +110,7 @@ Code is available in modeling.ipynb
 
 
 
-## Evaluation 
+## 📈 Evaluation 
 
 We already have trained models, so we need to evaluate and compare their performance. We will evaluate each model using a confusion matrix and a classification report 
 (it includes important metrics like precision, recall, F1, and accuracy) 
@@ -119,20 +119,20 @@ Results for each model are available in evaluation.ipynb
 
 
 
-## Results
+## 🏆 Results
 
 During evaluation, we see that random forest and gradient boosting are almost perfect models, while logistic regression and SVM have a problem with class 1. This can be related to the nature of the data, because in the EDA we saw that the data is non-linear separable, which explains why logistic regression has the worst performance. SVM performs better than logistic regression but still has a problem with class 1. Other algorithms, random forest and gradient boosting, work very well on non-linear data. Credit score, loan amount, and income influence the model decisions the most. In the EDA, in the pairplot and correlation table, we saw that these features stand out from the rest. In conclusion, we can say that machine learning models, especially random forest and gradient boosting, can be used in this field as very helpful tools.
 
 
 
-## Tools Used
+## 🛠️ Tools Used
 
 - Python (Pandas, Matplotlib, Searbon, Scikit-learn, Imbalanced-learn, Joblib)
 - Jupyter Notebook
 
 
 
-## Installation
+## ⚡ Installation
 
 1. Clone the repository: <br>
 
@@ -149,7 +149,7 @@ During evaluation, we see that random forest and gradient boosting are almost pe
 
 
 
-## Author
+## ✍️ Author
 
 This project was implemented in the summer of 2025. The project was carried out by Dmytro Skrypchenko.
 
