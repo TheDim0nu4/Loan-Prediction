@@ -79,11 +79,47 @@ Graphs and detailed information are available in eda.ipynb
 
 ## Data Preprocessing
 
+In this step, we need to preprocess our data based on the EDA. <br>
+
+It includes: <br>
+- loading the data. <br>
+- train-test split. <br>
+- applying a one-hot encoder on the categorical column. <br>
+- applying normalization on the numerical columns. <br>
+- applying SMOTEEN (a method that combines oversampling and undersampling). <br>
+- saving the preprocessed data. <br>
+
+Code and explanation are available in preprocessing.ipynb
 
 
 
+## Modeling 
+
+In this step, we are going to train some machine learning models. We will train classic models for binary classification like logistic regression and support vector machines. 
+We will also train powerful models like random forest and gradient boosting, which work well with non-linear data. For each model, we will use grid search to find the best hyperparameters. <br>
+
+For each model we will do: <br>
+
+1. Define the model and the grid of parameters. <br>
+2. Train the model and find the best parameters. <br>
+3. Check the best parameters. <br>
+
+Then we will save our models. <br>
+
+Code is available in modeling.ipynb
 
 
+
+## Evaluation 
+
+We already have trained models, so we need to evaluate and compare their performance. We will evaluate each model using a confusion matrix and a classification report 
+(it includes important metrics like precision, recall, F1, and accuracy) 
+
+Results for each model are available in evaluation.ipynb
+
+
+
+## Conclusion
 
 
 
