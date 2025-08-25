@@ -119,15 +119,39 @@ Results for each model are available in evaluation.ipynb
 
 
 
-## Conclusion
+## Results
 
 During evaluation, we see that random forest and gradient boosting are almost perfect models, while logistic regression and SVM have a problem with class 1. This can be related to the nature of the data, because in the EDA we saw that the data is non-linear separable, which explains why logistic regression has the worst performance. SVM performs better than logistic regression but still has a problem with class 1. Other algorithms, random forest and gradient boosting, work very well on non-linear data. Credit score, loan amount, and income influence the model decisions the most. In the EDA, in the pairplot and correlation table, we saw that these features stand out from the rest. In conclusion, we can say that machine learning models, especially random forest and gradient boosting, can be used in this field as very helpful tools.
 
 
 
+## Tools Used
+
+- Python (Pandas, Matplotlib, Searbon, Scikit-learn, Imbalanced-learn, Joblib)
+- Jupyter Notebook
 
 
 
+## Installation
+
+1. Clone the repository: <br>
+
+   git clone https://github.com/TheDim0nu4/Loan-Prediction.git 
+   cd Loan-Prediction 
+   
+2. Create a Python virtual environment (optional but recommended): <br>
+
+   python -m venv venv
+
+3. Install the required dependencies: <br>
+
+   pip install -r requirements.txt
+
+
+
+## Author
+
+This project was implemented in the summer of 2025. The project was carried out by Dmytro Skrypchenko
 
 
 
