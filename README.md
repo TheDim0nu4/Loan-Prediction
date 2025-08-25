@@ -134,24 +134,24 @@ During evaluation, we see that random forest and gradient boosting are almost pe
 
 ## Installation
 
-1. Clone the repository: <br>
+1. Clone the repository: <br><br>
 
-   git clone https://github.com/TheDim0nu4/Loan-Prediction.git 
-   cd Loan-Prediction 
+   git clone https://github.com/TheDim0nu4/Loan-Prediction.git <br>
+   cd Loan-Prediction <br><br>
    
-2. Create a Python virtual environment (optional but recommended): <br>
+2. Create a Python virtual environment (optional but recommended): <br><br>
 
-   python -m venv venv
+   python -m venv venv <br><br>
 
-3. Install the required dependencies: <br>
+3. Install the required dependencies: <br><br>
 
-   pip install -r requirements.txt
+   pip install -r requirements.txt <br><br>
 
 
 
 ## Author
 
-This project was implemented in the summer of 2025. The project was carried out by Dmytro Skrypchenko
+This project was implemented in the summer of 2025. The project was carried out by Dmytro Skrypchenko.
 
 
 
