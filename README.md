@@ -46,9 +46,9 @@ It also has a simple console application where a client can enter their own data
 
 ## Dataset 
 
-The dataset used is a publicly available dataset from Kaggle called 'Loan Prediction Dataset'. The dataset has 2000 rows and 7 columns. <br><br>
+The dataset used is a publicly available dataset from Kaggle called 'Loan Prediction Dataset'. The dataset has 2000 rows and 7 columns. <br>
  
-The columms are: <br><br>
+The columms are: <br>
 
 Age - age of the client. <br>
 Income - annual income of the client. <br>
@@ -56,7 +56,7 @@ Credit_Score - credit history of the client (a high value means a good history, 
 Loan_Amount - loan amount that the client wants to get. <br>
 Loan_Term - loan term requested by the client. <br>
 Employment_Status - employed, self-employed, or unemployed. <br>
-Loan_Approved - target attribute, 1 - loan was approved, 2 - loan was not approved. <br><br>
+Loan_Approved - target attribute, 1 - loan was approved, 2 - loan was not approved. <br>
 
 Source: https://www.kaggle.com/datasets/mosaadhendam/loan-prediction-dataset
 
