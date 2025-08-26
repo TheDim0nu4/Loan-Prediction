@@ -64,6 +64,7 @@ def main():
     print(f'Loan approved: {"Yes" if loan_approved else "No"}')
 
     print('Have a nice day!')
+    input()
 
 
 
