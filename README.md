@@ -128,7 +128,7 @@ Overall, the results suggest that ensemble models, particularly random forest, a
 - Python (Pandas, Matplotlib, Searbon, Scikit-learn, XGBoost, Imbalanced-learn, Joblib)
 - Jupyter Notebook
 
-  For creating a web application:
+ For creating a web application:
 
 - FastAPI
 - Vue.js
@@ -152,7 +152,7 @@ Overall, the results suggest that ensemble models, particularly random forest, a
    `pip install -r requirements.txt` <br><br>
 
 
-  To use the web application, you need: <br>
+To use the web application, you need: <br>
 
 1. Install Docker: <br>
 
@@ -166,7 +166,7 @@ Overall, the results suggest that ensemble models, particularly random forest, a
 
    `docker compose up --build` <br>
    
-   *The application will be available at the URL: http://localhost:5173 <br>
+   The application will be available at the URL: http://localhost:5173 <br>
 
 4. To stop the running web application: <br>
 
