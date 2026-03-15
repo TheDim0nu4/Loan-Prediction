@@ -128,7 +128,7 @@ Overall, the results suggest that ensemble models, particularly random forest, a
 - Python (Pandas, Matplotlib, Searbon, Scikit-learn, XGBoost, Imbalanced-learn, Joblib)
 - Jupyter Notebook
 
-  For creating a web application:
+For creating a web application:
 
 - FastAPI
 - Vue.js
