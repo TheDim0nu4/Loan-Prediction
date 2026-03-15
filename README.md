@@ -2,7 +2,7 @@
 
 This project focuses on analyzing data about loan approval and building a machine learning model to predict loan approval based on client information. 
 The project includes EDA, preprocessing the data, training machine learning models, then evaluating and comparing their performance. 
-It also has a simple console application where a client can enter their own data and see the loan result.
+It also has a simple web application where a client can enter their data and see the loan result.
 
 
 
@@ -12,53 +12,57 @@ It also has a simple console application where a client can enter their own data
 Loan-Prediction/
 │
 ├── data/
-│ ├── processed/
-│ │ ├── train.csv
-│ │ ├── test.csv
-│ ├── loan_prediction.csv
+│ ├── dataset.csv
 │
 ├── models/
-│ ├── gradient_boosting.joblib
 │ ├── logistic_regression.joblib
 │ ├── random_forest.joblib
 │ ├── svm.joblib
-│ ├── transformer.joblib
+│ ├── xgboost.joblib
 │
 ├── notebooks/
 │ ├── eda.ipynb
-│ ├── evaluation.ipynb
 │ ├── modeling.ipynb
-│ ├── preprocessing.ipynb
+│
+├── web_app/
+│ ├── backend/
+│ ├── frontend/
+│ ├── docker-compose.yml
 │
 ├── README.md
-├── app.py
 ├── requirements.txt
 ```
 
-- data/ folder with raw and processed data.
-- models/ folder with trained models and the transformer for data preprocessing.
+- data/ folder with data.
+- models/ folder with trained models.
 - notebooks/ folder with jupyter notebooks.
+- web_app/ folder with web application
 - README.md provides project overview and instructions.
-- app.py consol application for using model.
 - requirements.txt specifies Python dependencies.
 
 
 
 ## 📊 Dataset 
 
-The dataset used is a publicly available dataset from Kaggle called 'Loan Prediction Dataset'. The dataset has 2000 rows and 7 columns. <br>
+The dataset used is a publicly available dataset from Kaggle called 'Loan Approval Prediction'. The dataset has 614 rows and 13 columns. <br>
  
 The columms are: <br>
 
-Age - age of the client. <br>
-Income - annual income of the client. <br>
-Credit_Score - credit history of the client (a high value means a good history, a low value means the opposite). <br>
-Loan_Amount - loan amount that the client wants to get. <br>
-Loan_Term - loan term requested by the client. <br>
-Employment_Status - employed, self-employed, or unemployed. <br>
-Loan_Approved - target attribute, 1 - loan was approved, 2 - loan was not approved. <br>
+Loan_ID - a unique loan ID. <br>
+Gender - either male or female. <br>
+Married - whether the applicant is married (yes) or not married (no). <br>
+Dependents - number of people who depend on the applicant. <br>
+Education - applicant education (graduate or not graduate). <br>
+Self_Employed - whether the applicant is self-employed (Yes/No). <br>
+ApplicantIncome - applicant income. <br>
+CoapplicantIncome - co-applicant income. <br>
+LoanAmount - loan amount in thousands. <br>
+Loan_Amount_Term - loan term in months. <br>
+Credit_History - whether the credit history meets the guidelines. <br>
+Property_Area - where the applicant lives (urban, semi-urban or rural). <br>
+Loan_Status - loan approved (y/n). <br>
 
-Source: https://www.kaggle.com/datasets/mosaadhendam/loan-prediction-dataset
+Source: https://www.kaggle.com/datasets/ssiddharth408/loan-prediction-dataset
 
 
 
