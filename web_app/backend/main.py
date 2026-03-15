@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional
 import numpy as np
-import joblib
 import pandas as pd
+import joblib
 
 
 
