@@ -14,6 +14,9 @@ Loan-Prediction/
 ├── data/
 │ ├── dataset.csv
 │
+├── images/
+│ ├── web_app.png
+│
 ├── models/
 │ ├── logistic_regression.joblib
 │ ├── random_forest.joblib
@@ -34,6 +37,7 @@ Loan-Prediction/
 ```
 
 - data/ folder with data.
+- images/ folder with images used in the README.
 - models/ folder with trained models.
 - notebooks/ folder with jupyter notebooks.
 - web_app/ folder with web application
