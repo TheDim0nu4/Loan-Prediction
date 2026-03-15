@@ -71,11 +71,11 @@ Source: https://www.kaggle.com/datasets/ssiddharth408/loan-prediction-dataset
 As a first step, we need to explore and visualize our data. The goal of this step is to understand the data and see what we need to do in the preprocessing step. <br>
 
 It includes: <br>
-- Explore basic information about the data (null values and statistics). <br>
+- Explore basic information about the data (null values, duplicate rows and statistics). <br>
 - Check the class distribution. <br>
 - Create pairplots and a correlation map to see relationships between features. <br>
 - Visualize boxplots and value distributions for each attribute. <br>
-- Explore how the categorical column – Employment_Status – influences the target attribute. <br>
+- Explore how the categorical columns influences the target attribute. <br>
 
 Graphs and detailed information are available in eda.ipynb
 
@@ -88,27 +88,16 @@ In this step, we need to preprocess our data based on the EDA. <br>
 It includes: <br>
 - loading the data. <br>
 - train-test split. <br>
-- applying a one-hot encoder on the categorical column. <br>
-- applying normalization on the numerical columns. <br>
-- applying SMOTEEN (a method that combines oversampling and undersampling). <br>
-- saving the preprocessed data. <br>
+- creating a preprocessing pipeline that handles numerical and categorical features and also applies SMOTE, an oversampling method, to handle class imbalance. <br>
 
-Code and explanation are available in preprocessing.ipynb
+Code and explanation are available in modeling.ipynb
 
 
 
 ## 🤖 Modeling 
 
 In this step, we are going to train some machine learning models. We will train classic models for binary classification like logistic regression and support vector machines. 
-We will also train powerful models like random forest and gradient boosting, which work well with non-linear data. For each model, we will use grid search to find the best hyperparameters. <br>
-
-For each model we will do: <br>
-
-1. Define the model and the grid of parameters. <br>
-2. Train the model and find the best parameters. <br>
-3. Check the best parameters. <br>
-
-Then we will save our models. <br>
+We will also train powerful models like random forest and XGBoost, which work well with non-linear data. For each model, we will use grid search to find the best hyperparameters. <br>
 
 Code is available in modeling.ipynb
 
@@ -116,23 +105,34 @@ Code is available in modeling.ipynb
 
 ## 📈 Evaluation 
 
-We already have trained models, so we need to evaluate and compare their performance. We will evaluate each model using a confusion matrix and a classification report 
-(it includes important metrics like precision, recall, F1, and accuracy) 
+After training the models, we need to evaluate and compare their performance. We will evaluate each model using a confusion matrix and a classification report. It includes important metrics such as precision, recall, F1-score, and accuracy. After we identify the best model, we will use cross-validation to check that the model works well with different data distributions and to get a more reliable evaluation of its performance.
 
-Results for each model are available in evaluation.ipynb
+Results for each model are available in modeling.ipynb
 
 
 
 ## 🏆 Results
 
-During evaluation, we see that random forest and gradient boosting are almost perfect models, while logistic regression and SVM have a problem with class 1. This can be related to the nature of the data, because in the EDA we saw that the data is non-linear separable, which explains why logistic regression has the worst performance. SVM performs better than logistic regression but still has a problem with class 1. Other algorithms, random forest and gradient boosting, work very well on non-linear data. Credit score, loan amount, and income influence the model decisions the most. In the EDA, in the pairplot and correlation table, we saw that these features stand out from the rest. In conclusion, we can say that machine learning models, especially random forest and gradient boosting, can be used in this field as very helpful tools.
+Four machine learning models were evaluated: logistic regression, SVM, random forest, and XGBoost. The results show that logistic regression and SVM have difficulties correctly predicting class 0, which indicates that simpler models cannot fully capture the patterns in the data. <br>
+
+Among the tested models, random forest achieved the best overall performance, especially in identifying class 0 (recall ≈ 0.58), while maintaining very strong results for class 1. In contrast, XGBoost performed worse for class 0 (recall ≈ 0.50), meaning it tends to predict the majority class more often. <br>
+
+Cross-validation of the best model shows stable performance with an average accuracy around 0.80 and macro F1-score around 0.72, indicating good generalization ability. Feature importance analysis also shows that credit history, loan amount, and income have the strongest influence on model predictions. <br>
+
+Overall, the results suggest that ensemble models, particularly random forest, are the most suitable approach for this loan prediction task.
 
 
 
 ## 🛠️ Tools Used
 
-- Python (Pandas, Matplotlib, Searbon, Scikit-learn, Imbalanced-learn, Joblib)
+- Python (Pandas, Matplotlib, Searbon, Scikit-learn, XGBoost, Imbalanced-learn, Joblib)
 - Jupyter Notebook
+
+For creating a web application:
+
+- FastAPI
+- Vue.js
+- Docker
 
 
 
@@ -145,17 +145,37 @@ During evaluation, we see that random forest and gradient boosting are almost pe
    
 2. Create a Python virtual environment (optional but recommended): <br>
 
-   `python -m venv venv` <br>
+   `python3.11.1 -m venv venv` <br>
 
 3. Install the required dependencies: <br>
 
-   `pip install -r requirements.txt` <br>
+   `pip install -r requirements.txt` <br><br>
+
+
+To use the web application, you need: <br>
+
+1. Install Docker: <br>
+
+   https://www.docker.com <br>
+
+2. Open the folder with the web application: <br>
+
+   `cd web_app` <br>
+
+3. Run the application using Docker Compose: <br>
+
+   `docker compose up --build` <br>
+   The application will be available at the URL: http://localhost:5173 <br>
+
+4. To stop the running web application: <br>
+
+   `docker compose down` <br>
 
 
 
 ## ✍️ Author
 
-This project was implemented in the summer of 2025. The project was carried out by Dmytro Skrypchenko.
+The project was carried out by Dmytro Skrypchenko.
 
 
 
