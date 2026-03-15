@@ -123,6 +123,14 @@ Overall, the results suggest that ensemble models, particularly random forest, a
 
 
 
+## 💻 Web Application
+
+![image](images/web_app.png)
+
+The web application includes a form where a client can enter their data and a button. When the button is pressed, the data is sent to the backend, where the model makes a prediction based on the data and returns the result to the client.
+
+
+
 ## 🛠️ Tools Used
 
 - Python (Pandas, Matplotlib, Searbon, Scikit-learn, XGBoost, Imbalanced-learn, Joblib)
