@@ -154,17 +154,31 @@ For creating a web application:
 
    `git clone https://github.com/TheDim0nu4/Loan-Prediction.git` <br>
    `cd Loan-Prediction` <br>
-   
-2. Create a Python virtual environment (optional but recommended): <br>
-
-   `python3.11.1 -m venv venv` <br>
-
-3. Install the required dependencies: <br>
-
-   `pip install -r requirements.txt` <br><br>
 
 
-To use the web application, you need: <br>
+
+## 🧠 Running Jupyter Notebooks (Conda)
+
+1. Create a Conda environment: <br>
+
+   `conda create -n loan_env python=3.11` <br>
+
+2. Activate the environment: <br>
+
+   `conda activate loan_env` <br>
+
+3. Install project dependencies: <br>
+
+   `python -m pip install -r requirements.txt` <br>
+
+4. Select the environment kernel in Jupyter: <br>
+
+   - Open the notebooks and select the kernel corresponding to the created Conda environment (loan_env).
+   - After selecting the kernel, you can run the notebook cells and start working with the project.
+
+
+
+## 🌐 Running the Web Application (Docker)
 
 1. Install Docker: <br>
 
@@ -174,13 +188,13 @@ To use the web application, you need: <br>
 
    `cd web_app` <br>
 
-3. Run the application using Docker Compose: <br>
+3. Build and run the application using Docker Compose: <br>
 
    `docker compose up --build` <br>
    
    The application will be available at the URL: http://localhost:5173 <br>
 
-4. To stop the running web application: <br>
+4. Stop the application: <br>
 
    `docker compose down` <br>
 
